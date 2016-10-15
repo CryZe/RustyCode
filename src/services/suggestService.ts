@@ -264,11 +264,6 @@ export default class SuggestService {
             }
 
             for (let i = 0; i < docs.length; i++) {
-                if (i >= 15 && docs.length !== 16 && !codeBlock) {
-                    currentBlock.push('...');
-                    break;
-                }
-
                 let docLine = docs[i];
 
                 if (docLine.trim().startsWith('```')) {
